@@ -30,54 +30,56 @@
       <li>
         <a href="mailto:srfi-65@srfi.schemers.org">srfi-65@<span class="antispam">nospam</span>srfi.schemers.org (subscribers only)</a></li>
       <li>
-        <form method="POST" action="https://www.simplelists.com/subscribe.php">
-          <div class="title">Subscribe to srfi-65 mailing list</div>
-          <input name="email"
-                 placeholder="email address"
-                 tabindex="1"
-                 type="email" >
-          <input name="name"
-                 placeholder="full name"
-                 tabindex="2"
-                 type="text" >
-          <p>
-            <input id="sub-digest"
-                   name="digest"
-                   tabindex="3"
-                   type="checkbox"
-                   value="digest" >
-            <label for="sub-digest">daily digest?</label></p>
-          <input class="submit"
-                 name="submit"
-                 tabindex="4"
-                 type="submit"
-                 value="Subscribe to srfi-65" >
-          <input type="hidden" name="action" value="subscribe">
-          <input type="hidden" name="list" value="srfi-65@srfi.schemers.org"></form></li>
+        <span class="firefox-column-workaround">
+          <form method="POST" action="https://www.simplelists.com/subscribe.php">
+            <div class="title">Subscribe to srfi-65 mailing list</div>
+            <input name="email"
+                   placeholder="email address"
+                   tabindex="1"
+                   type="email" >
+            <input name="name"
+                   placeholder="full name"
+                   tabindex="2"
+                   type="text" >
+            <p>
+              <input id="sub-digest"
+                     name="digest"
+                     tabindex="3"
+                     type="checkbox"
+                     value="digest" >
+              <label for="sub-digest">daily digest?</label></p>
+            <input class="submit"
+                   name="submit"
+                   tabindex="4"
+                   type="submit"
+                   value="Subscribe to srfi-65" >
+            <input type="hidden" name="action" value="subscribe">
+            <input type="hidden" name="list" value="srfi-65@srfi.schemers.org"></form></a></li>
       <li>
-        <form method="POST" action="https://www.simplelists.com/subscribe.php">
-          <p class="title">Unsubscribe from srfi-65 mailing list</p>
-          <input name="email"
-                 placeholder="email address"
-                 tabindex="5"
-                 type="email" >
-          <input class="submit"
-                 name="submit"
-                 tabindex="6"
-                 type="submit"
-                 value="Unsubscribe from srfi-65" >
-          <input name="action"
-                 type="hidden"
-                 value="unsubscribe" >
-          <input name="list"
-                 type="hidden"
-                 value="srfi-65@srfi.schemers.org"></form></li></ul>
-    <h2>Abstract</h2>      <p>The <tt>define-immutable</tt> form defines an
+        <span class="firefox-column-workaround">
+          <form method="POST" action="https://www.simplelists.com/subscribe.php">
+            <p class="title">Unsubscribe from srfi-65 mailing list</p>
+            <input name="email"
+                   placeholder="email address"
+                   tabindex="5"
+                   type="email" >
+            <input class="submit"
+                   name="submit"
+                   tabindex="6"
+                   type="submit"
+                   value="Unsubscribe from srfi-65" >
+            <input name="action"
+                   type="hidden"
+                   value="unsubscribe" >
+            <input name="list"
+                   type="hidden"
+                   value="srfi-65@srfi.schemers.org"></form></a></li></ul>
+    <h2>Abstract</h2>      <p>The <code>define-immutable</code> form defines an
       identifier whose value never changes.
       <p>The expression part of the definition is
       evaluated lazily: it is not evaluated unless and until the identifier is
       evaluated. This permits an immutable definition to use other definitions
-      in more ways than is possible when using <tt>define</tt> in internal
+      in more ways than is possible when using <code>define</code> in internal
       definitions.
       <p>A series of immutable definitions have simple
       semantics, making them easy to program and understand.
