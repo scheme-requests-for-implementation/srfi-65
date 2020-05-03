@@ -4,6 +4,8 @@
 
 
 
+keywords: [[https://srfi.schemers.org/?keywords=binding][Binding]], [[https://srfi.schemers.org/?keywords=lazy-evaluation][Lazy Evaluation]]
+
 This repository hosts [[https://srfi.schemers.org/srfi-65/][SRFI 65]]: define-immutable: A Syntax to Define Identifiers With Immutable Values, a [[https://srfi.schemers.org/][Scheme Request for Implementation]].
 
 This SRFI is in /withdrawn/ status.
